@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="IvanRecipeApp.UpdateRecipePage"
+             BackgroundColor="White"
+             NavigationPage.HasNavigationBar="False">
+    <ScrollView>
+        <VerticalStackLayout 
+            Padding="20" 
+            Spacing="15">
+            <Label 
+                Text="Update Recipe"
+                TextColor="Black"
+                FontSize="28" 
+                HorizontalOptions="Center" />
+            <Entry 
+                x:Name="TitleEntry"
+                Placeholder="Recipe Title"
+                TextColor="Black"
+                FontSize="18" />
+            <Editor 
+                x:Name="IngredientsEditor" 
+                Placeholder="Ingredients" 
+                AutoSize="TextChanges" 
+                HeightRequest="100"
+                TextColor="Black"
+                FontSize="16" />
+            <Editor 
+                x:Name="InstructionsEditor"
+                Placeholder="Instructions"
+                AutoSize="TextChanges" 
+                HeightRequest="150" 
+                FontSize="16" 
+                TextColor="Black"/>
+
+            <HorizontalStackLayout 
+                Spacing="20"
+                HorizontalOptions="Center">
+                <Button Text="Save" 
+                        BackgroundColor="Green" 
+                        TextColor="White" 
+                        Clicked="OnSaveClicked" />
+
+                <Button Text="Delete" 
+                        BackgroundColor="Red" 
+                        TextColor="White" 
+                        Clicked="OnDeleteClicked" />
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

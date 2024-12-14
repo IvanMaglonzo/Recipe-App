@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="IvanRecipeApp.nilagaPage"
+             BackgroundColor="White"
+             NavigationPage.HasNavigationBar="False">
+    <VerticalStackLayout>
+        <Frame
+            BackgroundColor="Red"
+            BorderColor="Transparent"
+            Margin="0,-30"
+            HeightRequest="130"
+            Padding="0">
+            <HorizontalStackLayout>
+                <Button
+                    ImageSource="left.png"
+                    HorizontalOptions="Start"
+                    HeightRequest="50"
+                    BackgroundColor="Transparent"
+                    x:Name="backBtn"
+                    />
+            </HorizontalStackLayout>
+        </Frame>
+        <Label
+            Text="NILAGA"
+            FontSize="40"
+            FontFamily="TNR"
+            Margin="0,-30"
+            HorizontalOptions="Center"/>
+        <Border
+            Stroke="Red"
+            StrokeThickness="3"
+            Margin="30,70,30,20"
+            HeightRequest="140"
+            WidthRequest="200"            
+            >
+            <Image
+                Source="shanghai.png"/>
+        </Border>
+        <Label
+            Text="INGREDIENTS"
+            FontSize="20"
+            FontFamily="TNR"
+            FontAttributes="Bold"
+            HorizontalOptions="Center"
+            TextColor="Black"/>
+        <VerticalStackLayout
+            Spacing="5">
+            <Label
+                Text="500g (1 lb) pork belly or pork shank (cut into chunks)"
+                FontSize="15"              
+                FontFamily="TNR"
+                HorizontalOptions="Center"
+                TextColor="Black"/>
+            <Label
+                Text="1 medium onion, quartered"
+                FontSize="15"              
+                FontFamily="TNR"
+                HorizontalOptions="Center"
+                TextColor="Black"/>
+            <Label
+                Text="2-3 cloves garlic, crushed"
+                FontSize="15"              
+                FontFamily="TNR"
+                HorizontalOptions="Center"
+                TextColor="Black"/>
+            <Label
+                Text="1-2 medium potatoes, peeled and sliced"
+                FontSize="15"              
+                FontFamily="TNR"
+                HorizontalOptions="Center"
+                TextColor="Black"/>
+            <Label
+                Text="2-3 corn on the cob, cut into 2-3 pieces (optional, for added sweetness)"
+                FontSize="15"              
+                FontFamily="TNR"
+                HorizontalOptions="Center"
+                TextColor="Black"/>
+            <Label
+                Text="1 small bunch of pechay "
+                FontSize="15"              
+                FontFamily="TNR"
+                HorizontalOptions="Center"
+                TextColor="Black"/>
+            <Label
+                Text="1-2 medium carrots, peeled and sliced"
+                FontSize="15"              
+                FontFamily="TNR"
+                HorizontalOptions="Center"
+                TextColor="Black"/>
+            <Label
+                Text="1 tablespoon sugar (optional, for balance)"
+                FontSize="15"              
+                FontFamily="TNR"
+                HorizontalOptions="Center"
+                TextColor="Black"/>
+            <Label
+                Text="Spring roll wrappers (lumpia wrappers) – thawed if frozen"
+                FontSize="15"              
+                FontFamily="TNR"
+                HorizontalOptions="Center"
+                TextColor="Black"/>
+            <Label
+                Text="Fish sauce or patis (optional, for extra flavor)"
+                FontSize="15"              
+                FontFamily="TNR"
+                HorizontalOptions="Center"
+                TextColor="Black"/>
+        </VerticalStackLayout>
+        <Label
+            Text="INSTRUCTIONS"
+            Margin="0,20,0,0"
+            FontSize="20"
+            FontFamily="TNR"
+            FontAttributes="Bold"
+            HorizontalOptions="Center"
+            TextColor="Black"/>
+        <VerticalStackLayout
+            Spacing="5">
+            <Label
+                Text="Boil the Pork"
+                FontSize="15"              
+                FontFamily="TNR"
+                HorizontalOptions="Center"
+                TextColor="Black"/>
+            <Label
+                Text="Add the Vegetables"
+                FontSize="15"              
+                FontFamily="TNR"
+                HorizontalOptions="Center"
+                TextColor="Black"/>
+            <Label
+                Text="Add the Corn and Bananas (Optional)"
+                FontSize="15"              
+                FontFamily="TNR"
+                HorizontalOptions="Center"
+                TextColor="Black"/>
+            <Label
+                Text="Season the Nilaga"
+                FontSize="15"              
+                FontFamily="TNR"
+                HorizontalOptions="Center"
+                TextColor="Black"/>
+            <Label
+                Text="Serve"
+                FontSize="15"              
+                FontFamily="TNR"
+                HorizontalOptions="Center"
+                TextColor="Black"/>
+        </VerticalStackLayout>
+    </VerticalStackLayout>
+
+</ContentPage>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="IvanRecipeApp.addrecipePage"
+             BackgroundColor="White"
+             NavigationPage.HasNavigationBar="False">
+    <VerticalStackLayout>
+        <Frame
+            BackgroundColor="Red"
+            BorderColor="Transparent"
+            Margin="0,-30"
+            HeightRequest="130"
+            Padding="0">
+            <HorizontalStackLayout>
+                <Button
+                    ImageSource="left.png"
+                    HorizontalOptions="Start"
+                    HeightRequest="50"
+                    BackgroundColor="Transparent"
+                    x:Name="backBtn"
+                    />
+            </HorizontalStackLayout>
+        </Frame>
+        <Label
+            Text="ADD NEW RECIPE"
+            FontSize="40"
+            FontFamily="TNR"
+            Margin="0,-30"
+            HorizontalOptions="Center"/>
+        <ScrollView>
+            <VerticalStackLayout 
+                Padding="20" 
+                Spacing="15">
+                <Label 
+                    Text="Add New Recipe"
+                    FontSize="28" 
+                    HorizontalOptions="Center" />
+                <Entry 
+                    x:Name="TitleEntry" 
+                    Placeholder="Recipe Title" 
+                    FontSize="18"
+                    TextColor="Black"/>
+                <Editor 
+                    x:Name="IngredientsEditor" 
+                    Placeholder="Ingredients"
+                    AutoSize="TextChanges"
+                    HeightRequest="100" 
+                    FontSize="16"
+                    TextColor="Black"/>
+                <Editor 
+                    x:Name="InstructionsEditor" 
+                    Placeholder="Instructions" 
+                    AutoSize="TextChanges" 
+                    HeightRequest="150" 
+                    FontSize="16"
+                    TextColor="Black"/>
+                <Button Text="Save Recipe" 
+                    BackgroundColor="Red" 
+                    TextColor="White" 
+                    FontAttributes="Bold" 
+                    Clicked="OnSaveRecipeClicked" />
+            </VerticalStackLayout>
+        </ScrollView>
+    </VerticalStackLayout>
+</ContentPage>

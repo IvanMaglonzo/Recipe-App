@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="IvanRecipeApp.adoboPage"
+             BackgroundColor="White"
+             NavigationPage.HasNavigationBar="False">
+    <VerticalStackLayout>
+        <Frame
+            BackgroundColor="Red"
+            BorderColor="Transparent"
+            Margin="0,-30"
+            HeightRequest="130"
+            Padding="0">
+            <HorizontalStackLayout>
+                <Button
+                    ImageSource="left.png"
+                    HorizontalOptions="Start"
+                    HeightRequest="50"
+                    BackgroundColor="Transparent"
+                    x:Name="backBtn"
+                    />
+            </HorizontalStackLayout>
+        </Frame>
+        <Label
+            Text="ADOBO"
+            FontSize="40"
+            FontFamily="TNR"
+            Margin="0,-30"
+            HorizontalOptions="Center"/>
+        <Border
+            Stroke="Red"
+            StrokeThickness="3"
+            Margin="30,70,30,20"
+            HeightRequest="140"
+            WidthRequest="200"            
+            >
+            <Image
+                Source="adobo.png"/>
+        </Border>
+        <Label
+            Text="INGREDIENTS"
+            FontSize="20"
+            FontFamily="TNR"
+            FontAttributes="Bold"
+            HorizontalOptions="Center"
+            TextColor="Black"/>
+        <VerticalStackLayout
+            Spacing="5">
+            <Label
+                Text="1 kg (2 lbs) chicken (cut into pieces)"
+                FontSize="15"              
+                FontFamily="TNR"
+                HorizontalOptions="Center"
+                TextColor="Black"/>
+            <Label
+                Text="1/2 cup soy sauce"
+                FontSize="15"              
+                FontFamily="TNR"
+                HorizontalOptions="Center"
+                TextColor="Black"/>
+            <Label
+                Text="1/2 cup vinegar (white or cane vinegar)"
+                FontSize="15"              
+                FontFamily="TNR"
+                HorizontalOptions="Center"
+                TextColor="Black"/>
+            <Label
+                Text="5 cloves garlic (minced or smashed)"
+                FontSize="15"              
+                FontFamily="TNR"
+                HorizontalOptions="Center"
+                TextColor="Black"/>
+            <Label
+                Text="1 teaspoon whole black peppercorns"
+                FontSize="15"              
+                FontFamily="TNR"
+                HorizontalOptions="Center"
+                TextColor="Black"/>
+            <Label
+                Text="2-3 pieces bay leaves"
+                FontSize="15"              
+                FontFamily="TNR"
+                HorizontalOptions="Center"
+                TextColor="Black"/>
+            <Label
+                Text="1 cup water"
+                FontSize="15"              
+                FontFamily="TNR"
+                HorizontalOptions="Center"
+                TextColor="Black"/>
+            <Label
+                Text="1 tablespoon sugar (optional, for balance)"
+                FontSize="15"              
+                FontFamily="TNR"
+                HorizontalOptions="Center"
+                TextColor="Black"/>
+            <Label
+                Text="2 tablespoons cooking oil"
+                FontSize="15"              
+                FontFamily="TNR"
+                HorizontalOptions="Center"
+                TextColor="Black"/>
+            <Label
+                Text="Salt"
+                FontSize="15"              
+                FontFamily="TNR"
+                HorizontalOptions="Center"
+                TextColor="Black"/>
+        </VerticalStackLayout>
+        <Label
+            Text="INSTRUCTIONS"
+            Margin="0,20,0,0"
+            FontSize="20"
+            FontFamily="TNR"
+            FontAttributes="Bold"
+            HorizontalOptions="Center"
+            TextColor="Black"/>
+        <VerticalStackLayout
+            Spacing="5">
+            <Label
+                Text="Marinate the Chicken"
+                FontSize="15"              
+                FontFamily="TNR"
+                HorizontalOptions="Center"
+                TextColor="Black"/>
+            <Label
+                Text="Sear the Chicken"
+                FontSize="15"              
+                FontFamily="TNR"
+                HorizontalOptions="Center"
+                TextColor="Black"/>
+            <Label
+                Text="Simmer the Adobo"
+                FontSize="15"              
+                FontFamily="TNR"
+                HorizontalOptions="Center"
+                TextColor="Black"/>
+            <Label
+                Text="Optional: Balance the Flavor"
+                FontSize="15"              
+                FontFamily="TNR"
+                HorizontalOptions="Center"
+                TextColor="Black"/>
+            <Label
+                Text="Heat the Pan"
+                FontSize="15"              
+                FontFamily="TNR"
+                HorizontalOptions="Center"
+                TextColor="Black"/>
+            <Label
+                Text="Reduce the Sauce"
+                FontSize="15"              
+                FontFamily="TNR"
+                HorizontalOptions="Center"
+                TextColor="Black"/>
+            <Label
+                Text="Serve"
+                FontSize="15"              
+                FontFamily="TNR"
+                HorizontalOptions="Center"
+                TextColor="Black"/>
+        </VerticalStackLayout>
+    </VerticalStackLayout>
+</ContentPage>

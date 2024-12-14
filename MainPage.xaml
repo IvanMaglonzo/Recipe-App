@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="IvanRecipeApp.MainPage"
+             BackgroundColor="White"
+             NavigationPage.HasNavigationBar="False">
+    <VerticalStackLayout>
+        <Image
+            Source="firstpage.png"
+            HeightRequest="250"
+            Margin="0,30,0,0"/>
+        <Label
+            Text="Savers Note"
+            TextColor="Black"
+            FontFamily="TNR"
+            FontAttributes="Bold"
+            FontSize="50"
+            HorizontalOptions="Center"/>
+        <Label
+            Text="RECIPE APP"
+            TextColor="Black"
+            FontAttributes="Bold"
+            FontSize="25"
+            HorizontalOptions="Center"/>
+        <Button
+            Text="Get Started"
+            BackgroundColor="Black"
+            TextColor="White"
+            FontFamily="TNR"
+            Margin="60,90,60,0"
+            HeightRequest="50"
+            CornerRadius="30"
+            x:Name="getstartBtn"
+            Clicked="getstartBtn_Clicked"/>
+        <Frame
+            HeightRequest="500"
+            Margin="0,0,0,0"
+            BackgroundColor="Red"
+            BorderColor="Transparent">
+        </Frame>
+
+    </VerticalStackLayout>
+</ContentPage>
